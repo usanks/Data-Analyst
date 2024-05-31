@@ -258,11 +258,11 @@ AND percentage_laid_off IS NULL;
 
 -- Resultado Final:
 select company
-	, location
-	, industry
-    , total_laid_off AS laid_off
-    , percentage_laid_off AS p_laid_off
-    , `date`
-    , country
+, location
+, industry
+, total_laid_off AS laid_off
+, percentage_laid_off AS p_laid_off
+, `date`
+, country
 from layoffs_staging
 ORDER BY laid_off DESC, p_laid_off DESC;
